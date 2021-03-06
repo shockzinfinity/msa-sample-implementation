@@ -11,6 +11,8 @@
     <Folder Include="Data\" />
     <Folder Include="Settings\" />
     <Folder Include="Data\Interfaces\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.12.0" />

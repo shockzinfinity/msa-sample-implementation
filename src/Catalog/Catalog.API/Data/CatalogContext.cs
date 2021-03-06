@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Catalog.API.Data.Interfaces;
 using Catalog.API.Entities;
 using Catalog.API.Settings;
@@ -14,6 +15,8 @@ namespace Catalog.API.Data
       var database = client.GetDatabase(settings.DatabaseName);
 
       Products = database.GetCollection<Product>(settings.CollectionName);
+
+      CatalogContextSeed.SeedData(Products);
     }
 
     public IMongoCollection<Product> Products { get; }
