@@ -1,4 +1,3 @@
-using System;
 namespace Basket.API.Entities
 {
   public class BasketCheckout
@@ -8,6 +7,7 @@ namespace Basket.API.Entities
 
     // billing address
     public string FirstName { get; set; }
+
     public string LastName { get; set; }
     public string EmailAddress { get; set; }
     public string AddressLine { get; set; }
@@ -17,6 +17,7 @@ namespace Basket.API.Entities
 
     // payment
     public string CardName { get; set; }
+
     public string CardNumber { get; set; }
     public string Expiration { get; set; }
     public string CVV { get; set; }

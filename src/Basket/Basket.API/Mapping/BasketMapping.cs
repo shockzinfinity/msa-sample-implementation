@@ -1,4 +1,3 @@
-using System;
 using AutoMapper;
 using Basket.API.Entities;
 using EventBusRabbitMQ.Events;

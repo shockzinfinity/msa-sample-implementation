@@ -1,4 +1,5 @@
 using System;
+
 namespace EventBusRabbitMQ.Events
 {
   public class BasketCheckoutEvent
@@ -10,6 +11,7 @@ namespace EventBusRabbitMQ.Events
 
     // billing address
     public string FirstName { get; set; }
+
     public string LastName { get; set; }
     public string EmailAddress { get; set; }
     public string AddressLine { get; set; }
@@ -19,6 +21,7 @@ namespace EventBusRabbitMQ.Events
 
     // payment
     public string CardName { get; set; }
+
     public string CardNumber { get; set; }
     public string Expiration { get; set; }
     public string CVV { get; set; }

@@ -1,4 +1,3 @@
-﻿using System;
 using Catalog.API.Entities;
 using MongoDB.Driver;
 

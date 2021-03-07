@@ -1,4 +1,3 @@
-using System;
 using Basket.API.Data.Interfaces;
 using StackExchange.Redis;
 
