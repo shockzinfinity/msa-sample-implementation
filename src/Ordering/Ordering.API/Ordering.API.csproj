@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DockerComposeProjectPath>../../../docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,5 +28,10 @@
     <ProjectReference Include="..\Ordering.Infrastructure\Ordering.Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RabbitMQ\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 </Project>
