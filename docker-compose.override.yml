@@ -74,3 +74,15 @@ services:
     ports:
       - "7000:80"
 
+  aspnetrunbasics:
+    container_name: aspnetrunbasics
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ApiSettings:BaseAddress=ocelotapigateway"
+    depends_on:
+      - catalog.api
+      - basket.api
+      - ordering.api
+      - ocelotapigateway
+    ports:
+      - "8003:80"
